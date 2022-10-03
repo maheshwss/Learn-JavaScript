@@ -1,0 +1,50 @@
+<script>
+    // Declare string variables
+    var firstName = "Mahesh";
+
+    // Escape character \
+    var myStr = "I am a \"double quoted string\" inside double quote";
+
+    // single and double quotes
+    var myStr = 'I am a "double quoted string" inside double quote';
+    // or
+    var myStr = "I am a 'double quoted string' inside double quote";
+
+    // Concatenating strings with plus operator
+    var ourStr = "I come first. " + "I come second.";
+
+    console.log(ourStr);
+
+    // concatenating strings with plus equal operator
+    var ourStr = "This is first sentence. ";
+    ourStr += "This is second sentence.";
+    console.log(ourStr);
+
+    // constructing strings with variables
+    var myName = "Mahesh";
+    var myStr = "My name is " + myName + " and I am well!";
+    console.log(myStr)
+
+    // Appending variables to strings
+    var someAdjective = "worthwhile";
+    var myStr = "Learning to code is ";
+    myStr += someAdjective;
+    console.log(myStr);
+
+    // Length of string
+    myStrLength = myStr.length;
+    console.log(myStrLength)
+
+    // Bracket Notation i.e. using indexing
+    myStrFirstLetter = myStr[0];
+    console.log(myStrFirstLetter)
+
+    // string is Immutable
+    // we cannot change the characters of string using indexing
+
+    // last letter of string
+    console.log(myStr[myStrLength-1])
+    
+    // find Nth character eg third last
+    console.log(myStr[myStrLength-3 ])
+</script> 

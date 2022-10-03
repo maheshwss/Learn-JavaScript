@@ -1,0 +1,62 @@
+<script>
+    // Arrays
+    var myArry = ["Mahesh", 1];
+
+    // Nested array
+    var nestedArray = [["Bulls", 23], ["everything", 101010]];
+
+    // changing the elements of array with indexes
+    var myArry = [18,64,99];
+    myArry[1] = 45;
+    console.log(myArry);
+
+    // accessing the element of nested array
+    var nestedArray = [[2,3,5],[4,5,7]];
+
+    var myData = nestedArray[0][0];
+    console.log(myData);
+
+    // Manipulate arrays with push() i.e to append data to array at end
+    // appending single element
+    nestedArray.push(10)
+    console.log(nestedArray)
+
+    // appending an array
+    nestedArray.push([8,9])
+    console.log(nestedArray)
+    
+    // pop() removes the element at end
+    var myArry = [18,64,99];
+    var removedFromMyArray = myArry.pop();
+    console.log(removedFromMyArray)
+    console.log(myArry)
+
+    var nestedArray = [[2,3,5],[4,5,7]];
+    var removedFromNestedArray = nestedArray.pop();
+    console.log(removedFromNestedArray)
+    console.log(nestedArray)
+
+    // shift() removes the element at start
+    var myArry = [18,64,99];
+    var removedFromMyArray = myArry.shift();
+    console.log(removedFromMyArray)
+    console.log(myArry)
+
+    var nestedArray = [[2,3,5],[4,5,7]];
+    var removedFromNestedArray = nestedArray.shift();
+    console.log(removedFromNestedArray)
+    console.log(nestedArray)
+
+    // unshift() to add an element at start
+    var myArry = [18,64,99];
+    myArry.unshift(50);
+    console.log(myArry)
+
+    var nestedArray = [[2,3,5],[4,5,7]];
+    nestedArray.unshift([1,9,6]);
+    console.log(nestedArray)
+
+    // shoping list
+    var myList = [["cereal", 3], ["milk", 2], ["eggs", 5]]
+    
+</script>
