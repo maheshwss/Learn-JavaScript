@@ -1,0 +1,75 @@
+<script>
+    
+    // Boolean values
+    // true and false
+
+    function trueOrFalse(wasThatTrue) {
+        if (wasThatTrue) {
+            return "Yes, that was true";
+        }
+        return "No, that was false";
+    }
+
+    console.log(trueOrFalse(true));
+
+    // Equality operator == // convert type
+    function testEqual1(val) {
+        if (val == '12') {
+            return "Equal";
+        }
+        return "Not Equal";
+    }
+
+    console.log(testEqual1(12)); // gives Equal
+
+    // Strict Equality operator === // does not convert type
+    function testEqual2(val) {
+        if (val === '12') {
+            return "Equal";
+        }
+        return "Not Equal";
+    }
+
+    console.log(testEqual2(12));  // gives Not Equal
+
+    // Inequality operator !=
+    function testNotEqual1(val) {
+        if (val != '12') {
+            return "Not Equal";
+        }
+        return "Equal";
+    }
+
+    console.log(testNotEqual1(12));
+
+    // Strict Inequality operator !==
+    function testNotEqual2(val) {
+        if (val !== '12') {
+            return "Not Equal";
+        }
+        return "Equal";
+    }
+
+    console.log(testNotEqual2(12));
+
+    // Logical and operator &&
+    function testLogicalAnd(val) {
+        if (val >= 25 && val <= 50) {
+            return "Yes";
+        }
+        return "No";
+    }
+
+    console.log(testLogicalAnd(12));
+
+    // Logical or operator ||
+    function testLogicalOr(val) {
+        if (val <= 25 || val >= 50) {
+            return "Outside";
+        }
+        return "Inside";
+    }
+
+    console.log(testLogicalOr(12));
+
+</script>

@@ -1,0 +1,61 @@
+<script>
+    // object
+    var myDog = {
+    "name": "Quincy",
+    "legs": 3,
+    "tails": 1,
+    "friends": []
+    };
+
+
+    var testObj = {
+        "hat": "ballcap",
+        "shirt": "jersey",
+        "shoes": "cleats"
+    };
+
+    // accessing object properties with dot notation
+    var hatValue = testObj.hat;
+    console.log(hatValue);
+
+    var shirtValue = testObj.shirt;
+    console.log(shirtValue);
+
+    // accessing object properties with bracket notation
+    var testObj2 = {
+        "an entree": "hamburger",
+        "my side": "veggies",
+        "the drink": "water"
+    };
+
+    var entreeValue = testObj2["an entree"];
+    console.log(entreeValue);
+
+    var drinkValue = testObj2["the drink"];
+    console.log(drinkValue);
+
+    var testObj3 = {
+        12: "Namath",
+        16: "Montana",
+        19: "Unitas"
+    }
+
+    var playerNumber = 16;
+    var player = testObj3[playerNumber];
+    console.log(player);
+
+    // Updating object properties
+    myDog.name = "Coder";
+    console.log(myDog)
+
+    // Add new property to object using dot or barcket notation
+    myDog.bark = "bow-wow";
+    // myDog["bark"] = "woof!";
+    console.log(myDog)
+
+    // delete object property
+    delete myDog.tails;
+    console.log(myDog)
+
+</script>
+

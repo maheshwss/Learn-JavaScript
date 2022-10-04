@@ -7,4 +7,69 @@
     ourResuableFunction();
     ourResuableFunction();
 
+    // function with arguments
+    function functionWithArgs(a,b) {
+        console.log(a+b);
+    }
+
+    functionWithArgs(10,5);
+
+    // global scope of variable
+    var myGlobal = 10;  // global variable outside function
+    
+    function fun1() {
+
+        oopsGlobal = 5;  // without var keyword is global variable inside a function
+
+    }
+
+    function fun2() {
+        var output = "";
+        if (typeof myGlobal != "undefined") {
+            output += "myGlobal: " + myGlobal + " ";
+        }
+        if (typeof oopsGlobal != "undefined") {
+            output += "oopsGlobal: " + oopsGlobal;
+        }
+        console.log(output)
+    }
+    fun1();
+    fun2();
+
+    // Local scope 
+    function myLocalScope() {
+        // variable with var keyword inside function is a local variable 
+        // scope is within function only 
+        // cannot be accessed outside function
+        var myvar  = 5;
+        console.log(myvar)
+    }
+    myLocalScope();
+
+    // Return a value from a function
+    function minusSeven(num) {
+        return num - 7;
+    }
+
+    console.log(minusSeven(10));
+    // without return statement it returns undefined
+
+    // assignment with a returned value
+    var changed = 0;
+    changed = minusSeven(25);
+    console.log(changed);
+    
+    // stand in line
+    function nextInLine(arr, item) {
+        arr.push(item);
+        return arr.shift();
+    }
+
+    var testArr = [1,2,3,4,5];
+
+    console.log("Before: " + JSON.stringify(testArr));
+    console.log(nextInLine(testArr, 6));
+    console.log("After: " + JSON.stringify(testArr));
+
+
 </script>
