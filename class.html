@@ -1,0 +1,22 @@
+<script>
+    class SpaceShuttle {
+        constructor(targetPlanet) {
+            this.targetPlanet = targetPlanet;
+        }
+    }
+    var zeus = new SpaceShuttle('Jupiter');
+
+    console.log(zeus.targetPlanet);
+
+    function makeClass() {
+        class Vegetable1 {
+            constructor(name) {
+                this.name =name;
+            }
+        }
+        return Vegetable1;
+    }
+    const Vegetable2 = makeClass();
+    const carrot = new Vegetable2('carrot');
+    console.log(carrot.name);
+</script>

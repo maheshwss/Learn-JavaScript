@@ -1,0 +1,12 @@
+<script>
+    const arr1 = ["jan", "feb", "mar", "apr"];
+
+    let arr2;
+
+    (function() {
+        arr2 = [...arr1];  // coping the content of arr1 to arr2 using spread opeartor
+        arr1[0] = 'potato';
+    })();
+    console.log(arr1);
+    console.log(arr2);
+</script>

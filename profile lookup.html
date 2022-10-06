@@ -1,0 +1,25 @@
+<script>
+    var contacts = [
+        {
+            "firstName": "Akira",
+            "lastName": "Laine",
+            "number": "46591645454",
+            "likes": ["Pizza", "Coding", "Browine Points"]
+        },
+        {
+            "firstName": "Harry",
+            "lastName": "Potter",
+            "number": "84857658512",
+            "likes": ["Hogwarts", "Magic"]
+        }
+    ]
+    function lookUpProfile(name, prop) {
+        for (var i=0; i<contacts.length; i++) {
+             if (contacts[i].firstName === name) {
+                return contacts[i][prop] || "No such property";
+             }
+        }
+        return "No such contact";
+    }
+    console.log(lookUpProfile("Harry", "likes"));
+</script>
